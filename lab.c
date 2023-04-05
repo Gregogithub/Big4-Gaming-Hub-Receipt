@@ -6,6 +6,23 @@ int main()
 int numberofgamesplayed;
 int player,x,totalamount;
 x=30;
+  
+char name[50];
+int password;
+printf("SIGN IN TO BIG FOUR GAMING HUB");
+printf("\nENTER USER NAME:");
+scanf("%s",&name);
+printf("\nENTER LOGIN PASSWORD:");
+scanf("%d",&password);
+if(password!=1090)
+{
+printf("\nYOU HAVE ENTERED A WRONG PASSWORD\nACCESS DENIED\nPRESS ANY KEY TO EXIT:");
+return 0;
+}
+else if(password==1090)
+{
+printf("ACCESS GRANTED\n");
+}
 printf("WELCOME TO BIG FOUR GAMING HUB 2023");
 printf("\nLIPA NA MPESA\nPOCHI LA BIASHARA\n0794809603");
 printf("\nENTER PLAYER(USE NUMBERS):");
